@@ -1,5 +1,5 @@
 PODS:
-  - EPShapes (0.1.0)
+  - EPShapes (1.0.0)
 
 DEPENDENCIES:
   - EPShapes (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  EPShapes: cb38b412598c00d04c59d929f43ff84220d1d2f1
+  EPShapes: 981666a2fe8bcee8464fec729e8729b0bf1b751a
 
 COCOAPODS: 0.39.0

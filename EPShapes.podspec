@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
 3. Designable classes that can be used with custom views
 4. Support for creating programmatically
 5. Scale shapes
-6. Apply extursions for stars to generate star shapes
-7. Equilateral Polygons with 'n' number of shapes can be designed directly from IB/ Storyboards
+6. Apply extursions for stars to generate different star shapes
+7. Equilateral Polygon UIviews/UIImageViews/UIButtons with 'n' number of shapes can be designed directly from IB/ Storyboards
 
 DESC
 

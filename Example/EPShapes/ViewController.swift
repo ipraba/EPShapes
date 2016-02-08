@@ -13,10 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let shape = HeartView(frame: CGRectMake(0,0,100,100))
-        shape.config()
-            
-        view.addSubview(shape)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
