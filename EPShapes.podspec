@@ -1,40 +1,30 @@
-#
-# Be sure to run `pod lib lint EPShapes.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "EPShapes"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of EPShapes."
+  s.version          = "1.0.0"
+  s.summary          = "Design shapes(polygons, hearts, arrows, stars) in Interface builder"
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                       DESC
+1. Design shapes in interface builder using IBInspectable and IBDesignable Protocols
+2. UIBezierPath extensions that can easily draw polygons, stars, arrows and hearts
+3. Designable classes that can be used with custom views
+4. Support for creating programmatically
+5. Scale shapes
+6. Apply extursions for stars to generate star shapes
+7. Equilateral Polygons with 'n' number of shapes can be designed directly from IB/ Storyboards
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/EPShapes"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+DESC
+
+  s.homepage         = "https://github.com/ipraba/EPShapes"
   s.license          = 'MIT'
   s.author           = { "Prabaharan" => "mailprabaharan.e@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/EPShapes.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/ipraba/EPShapes.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'EPShapes' => ['Pod/Assets/*.png']
-  }
+#s.resource_bundles = {
+#    'EPShapes' => ['Pod/Assets/*.png']
+#  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
