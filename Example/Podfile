@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'EPShapes_Example', :exclusive => true do
+  pod "EPShapes", :path => "../"
+end
+
+target 'EPShapes_Tests', :exclusive => true do
+  pod "EPShapes", :path => "../"
+
+  
+end

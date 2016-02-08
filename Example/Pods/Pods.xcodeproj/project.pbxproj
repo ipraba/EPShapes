@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		039FC6ECA1816A6542A3E6401A151A28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0731167DF7AA53A488AFC1285C65B180 /* EPShapes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83C493218F698AA22BCD27CC39609C65 /* EPShapes.bundle */; };
+		24839EDD461DA29BD590016D927A9514 /* Pods-EPShapes_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 559DE2DFC00EE4FC6640E1E976342180 /* Pods-EPShapes_Example-dummy.m */; };
+		2DCD1854FD18FEE7BAD35CA87334E86B /* EPShapes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C482EAF08EED3B20DF84C0A84D4F3 /* EPShapes-dummy.m */; };
+		2F7D46BD7512A33EA909040280DE4D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		84E08AEA8C5085F65E30CC56B0B682AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		A54285528287B9B8462A154E00F81F73 /* Pods-EPShapes_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 983E3C77852286A965E892BA96C04BF7 /* Pods-EPShapes_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B5FFD5E4C05EDAB89D79A73D9DD3E8 /* EPShapes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FCBB324A12B35F9A8224F608F3A520 /* EPShapes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C14C764F41851A735C6D957C00A416B2 /* Pods-EPShapes_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 382300DE85AC4FBDB788CCB4AF45466F /* Pods-EPShapes_Tests-dummy.m */; };
+		F306A86CD3BE588C557C2FD49C212644 /* Pods-EPShapes_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D27A4CAB8104ADF3E2A5D87E3EC3E9 /* Pods-EPShapes_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FE76A31C6878D00056DCE1 /* ArrowDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76821C6878D00056DCE1 /* ArrowDesignable.swift */; };
+		F4FE76A41C6878D00056DCE1 /* HeartDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76831C6878D00056DCE1 /* HeartDesignable.swift */; };
+		F4FE76A51C6878D00056DCE1 /* PolygonDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76841C6878D00056DCE1 /* PolygonDesignable.swift */; };
+		F4FE76A61C6878D00056DCE1 /* ShapeDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76851C6878D00056DCE1 /* ShapeDesignable.swift */; };
+		F4FE76A71C6878D00056DCE1 /* StarDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76861C6878D00056DCE1 /* StarDesignable.swift */; };
+		F4FE76A81C6878D00056DCE1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76881C6878D00056DCE1 /* Enums.swift */; };
+		F4FE76A91C6878D00056DCE1 /* UIBezierPath+Arrows.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE768A1C6878D00056DCE1 /* UIBezierPath+Arrows.swift */; };
+		F4FE76AA1C6878D00056DCE1 /* UIBezierPath+Hearts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE768B1C6878D00056DCE1 /* UIBezierPath+Hearts.swift */; };
+		F4FE76AB1C6878D00056DCE1 /* UIBezierPath+Polygons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE768C1C6878D00056DCE1 /* UIBezierPath+Polygons.swift */; };
+		F4FE76AC1C6878D00056DCE1 /* UIBezierPath+Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE768D1C6878D00056DCE1 /* UIBezierPath+Stars.swift */; };
+		F4FE76AD1C6878D00056DCE1 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76901C6878D00056DCE1 /* ArrowButton.swift */; };
+		F4FE76AE1C6878D00056DCE1 /* ArrowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76911C6878D00056DCE1 /* ArrowImageView.swift */; };
+		F4FE76AF1C6878D00056DCE1 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76921C6878D00056DCE1 /* ArrowView.swift */; };
+		F4FE76B01C6878D00056DCE1 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76941C6878D00056DCE1 /* HeartButton.swift */; };
+		F4FE76B11C6878D00056DCE1 /* HeartImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76951C6878D00056DCE1 /* HeartImageView.swift */; };
+		F4FE76B21C6878D00056DCE1 /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76961C6878D00056DCE1 /* HeartView.swift */; };
+		F4FE76B31C6878D00056DCE1 /* PolygonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76981C6878D00056DCE1 /* PolygonButton.swift */; };
+		F4FE76B41C6878D00056DCE1 /* PolygonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76991C6878D00056DCE1 /* PolygonImageView.swift */; };
+		F4FE76B51C6878D00056DCE1 /* PolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE769A1C6878D00056DCE1 /* PolygonView.swift */; };
+		F4FE76B61C6878D00056DCE1 /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE769C1C6878D00056DCE1 /* ShapeButton.swift */; };
+		F4FE76B71C6878D00056DCE1 /* ShapeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE769D1C6878D00056DCE1 /* ShapeImageView.swift */; };
+		F4FE76B81C6878D00056DCE1 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE769E1C6878D00056DCE1 /* ShapeView.swift */; };
+		F4FE76B91C6878D00056DCE1 /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76A01C6878D00056DCE1 /* StarButton.swift */; };
+		F4FE76BA1C6878D00056DCE1 /* StarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76A11C6878D00056DCE1 /* StarImageView.swift */; };
+		F4FE76BB1C6878D00056DCE1 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE76A21C6878D00056DCE1 /* StarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EC1A1420B6500BD380436D783B131E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D8BDFE238F13A83773AACC24DE9CADB;
+			remoteInfo = EPShapes;
+		};
+		79BDCFE2AF01031824BAC46B204BDD76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71494FB52027CA0585841A8EE15890ED;
+			remoteInfo = "EPShapes-EPShapes";
+		};
+		D6BFDC224E441ECC42169D72BB3BA67A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D8BDFE238F13A83773AACC24DE9CADB;
+			remoteInfo = EPShapes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17B0EF945BC5D2D5B1F5C32F8B9DE560 /* Pods-EPShapes_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EPShapes_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2958C72E6FC3ABC9A143381D286C1BA2 /* Pods-EPShapes_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EPShapes_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2C39DCECD08FE2089242648305F2D7D5 /* Pods-EPShapes_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EPShapes_Tests.modulemap"; sourceTree = "<group>"; };
+		382300DE85AC4FBDB788CCB4AF45466F /* Pods-EPShapes_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EPShapes_Tests-dummy.m"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4176A0E33EEFB2279A21F111B6FB40B2 /* EPShapes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EPShapes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4721E18BC3503B32D4E28DF19A158B6F /* Pods-EPShapes_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EPShapes_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		48E96B5D6246A241C2C30DDB7F041F6F /* Pods-EPShapes_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EPShapes_Example.modulemap"; sourceTree = "<group>"; };
+		51A6076FCCBE3CD1BF3DA9242FAC4558 /* Pods-EPShapes_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EPShapes_Tests-resources.sh"; sourceTree = "<group>"; };
+		559DE2DFC00EE4FC6640E1E976342180 /* Pods-EPShapes_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EPShapes_Example-dummy.m"; sourceTree = "<group>"; };
+		575929930E6E73B5587E067973BE8074 /* Pods_EPShapes_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPShapes_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D265E892B12DF3A0DCECF77A1515CE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BF580CEE689DB0475141FF611DF819 /* Pods-EPShapes_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EPShapes_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73D27A4CAB8104ADF3E2A5D87E3EC3E9 /* Pods-EPShapes_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EPShapes_Tests-umbrella.h"; sourceTree = "<group>"; };
+		83C493218F698AA22BCD27CC39609C65 /* EPShapes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPShapes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FCBB324A12B35F9A8224F608F3A520 /* EPShapes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EPShapes-umbrella.h"; sourceTree = "<group>"; };
+		887B1DF181D956BBA4CC3D5A61133806 /* EPShapes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EPShapes.xcconfig; sourceTree = "<group>"; };
+		8E4C482EAF08EED3B20DF84C0A84D4F3 /* EPShapes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EPShapes-dummy.m"; sourceTree = "<group>"; };
+		91CD78D0598AB269145C85D9B006A474 /* Pods-EPShapes_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EPShapes_Example-resources.sh"; sourceTree = "<group>"; };
+		983E3C77852286A965E892BA96C04BF7 /* Pods-EPShapes_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EPShapes_Example-umbrella.h"; sourceTree = "<group>"; };
+		9ABA3A08E931D2373FA664E4D1D71A19 /* Pods-EPShapes_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EPShapes_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B37230A3D17EB8655B3C18DE6C2DC8B /* Pods-EPShapes_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EPShapes_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A27E55E0315D44A8115644BB1526E526 /* Pods-EPShapes_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EPShapes_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7F9D768D591B549A841559F158D090B /* Pods_EPShapes_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPShapes_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80B7514A686CE7D7C02AAFDEB36FD9B /* Pods-EPShapes_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EPShapes_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B132A0C9807E21A5D35A3526B514A2F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81B9797726A2295273DA03A7E38531A /* Pods-EPShapes_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EPShapes_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C03A03DF85BE434A4D093027E0E70DC3 /* Pods-EPShapes_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EPShapes_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D8E54D57464672BBE8D9E2409A91324F /* EPShapes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EPShapes.modulemap; sourceTree = "<group>"; };
+		E6C4622FF1D3EF6AB074242588245151 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F28C032E41864E40C848EDE3D028C68E /* EPShapes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EPShapes-prefix.pch"; sourceTree = "<group>"; };
+		F4FE76821C6878D00056DCE1 /* ArrowDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowDesignable.swift; sourceTree = "<group>"; };
+		F4FE76831C6878D00056DCE1 /* HeartDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartDesignable.swift; sourceTree = "<group>"; };
+		F4FE76841C6878D00056DCE1 /* PolygonDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonDesignable.swift; sourceTree = "<group>"; };
+		F4FE76851C6878D00056DCE1 /* ShapeDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeDesignable.swift; sourceTree = "<group>"; };
+		F4FE76861C6878D00056DCE1 /* StarDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarDesignable.swift; sourceTree = "<group>"; };
+		F4FE76881C6878D00056DCE1 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F4FE768A1C6878D00056DCE1 /* UIBezierPath+Arrows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Arrows.swift"; sourceTree = "<group>"; };
+		F4FE768B1C6878D00056DCE1 /* UIBezierPath+Hearts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Hearts.swift"; sourceTree = "<group>"; };
+		F4FE768C1C6878D00056DCE1 /* UIBezierPath+Polygons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Polygons.swift"; sourceTree = "<group>"; };
+		F4FE768D1C6878D00056DCE1 /* UIBezierPath+Stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Stars.swift"; sourceTree = "<group>"; };
+		F4FE76901C6878D00056DCE1 /* ArrowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
+		F4FE76911C6878D00056DCE1 /* ArrowImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowImageView.swift; sourceTree = "<group>"; };
+		F4FE76921C6878D00056DCE1 /* ArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		F4FE76941C6878D00056DCE1 /* HeartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
+		F4FE76951C6878D00056DCE1 /* HeartImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartImageView.swift; sourceTree = "<group>"; };
+		F4FE76961C6878D00056DCE1 /* HeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		F4FE76981C6878D00056DCE1 /* PolygonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonButton.swift; sourceTree = "<group>"; };
+		F4FE76991C6878D00056DCE1 /* PolygonImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonImageView.swift; sourceTree = "<group>"; };
+		F4FE769A1C6878D00056DCE1 /* PolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonView.swift; sourceTree = "<group>"; };
+		F4FE769C1C6878D00056DCE1 /* ShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
+		F4FE769D1C6878D00056DCE1 /* ShapeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeImageView.swift; sourceTree = "<group>"; };
+		F4FE769E1C6878D00056DCE1 /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
+		F4FE76A01C6878D00056DCE1 /* StarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		F4FE76A11C6878D00056DCE1 /* StarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarImageView.swift; sourceTree = "<group>"; };
+		F4FE76A21C6878D00056DCE1 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		136E1A5B7EC092F3E39BB15A340F5D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7D46BD7512A33EA909040280DE4D32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59608AC99B5E32C8C9B9C210BFCA163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92C341F325394B3C2525FBACE391A87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E08AEA8C5085F65E30CC56B0B682AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA3ACDB9DAB773AB309583340325C479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039FC6ECA1816A6542A3E6401A151A28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B7996A6E472B28856E1717A89D43BFB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FE2CDCC1C961BC8E511F2B6A34B487FD /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		2B0FA6E8DF1B43B367FE89E98C1D931C /* Pods-EPShapes_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6D265E892B12DF3A0DCECF77A1515CE0 /* Info.plist */,
+				48E96B5D6246A241C2C30DDB7F041F6F /* Pods-EPShapes_Example.modulemap */,
+				A27E55E0315D44A8115644BB1526E526 /* Pods-EPShapes_Example-acknowledgements.markdown */,
+				9ABA3A08E931D2373FA664E4D1D71A19 /* Pods-EPShapes_Example-acknowledgements.plist */,
+				559DE2DFC00EE4FC6640E1E976342180 /* Pods-EPShapes_Example-dummy.m */,
+				A80B7514A686CE7D7C02AAFDEB36FD9B /* Pods-EPShapes_Example-frameworks.sh */,
+				91CD78D0598AB269145C85D9B006A474 /* Pods-EPShapes_Example-resources.sh */,
+				983E3C77852286A965E892BA96C04BF7 /* Pods-EPShapes_Example-umbrella.h */,
+				C03A03DF85BE434A4D093027E0E70DC3 /* Pods-EPShapes_Example.debug.xcconfig */,
+				17B0EF945BC5D2D5B1F5C32F8B9DE560 /* Pods-EPShapes_Example.release.xcconfig */,
+			);
+			name = "Pods-EPShapes_Example";
+			path = "Target Support Files/Pods-EPShapes_Example";
+			sourceTree = "<group>";
+		};
+		39FFBB707AEC8955508AAA610E07FEB2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8E54D57464672BBE8D9E2409A91324F /* EPShapes.modulemap */,
+				887B1DF181D956BBA4CC3D5A61133806 /* EPShapes.xcconfig */,
+				8E4C482EAF08EED3B20DF84C0A84D4F3 /* EPShapes-dummy.m */,
+				F28C032E41864E40C848EDE3D028C68E /* EPShapes-prefix.pch */,
+				84FCBB324A12B35F9A8224F608F3A520 /* EPShapes-umbrella.h */,
+				E6C4622FF1D3EF6AB074242588245151 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EPShapes";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				8CFE3A5902AA942B3F408E57C01F8A5C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D88849CEE8912E356FBD56B27EC0B99A /* Products */,
+				C39D691EC29BDEBADC7D413F5270385F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8CFE3A5902AA942B3F408E57C01F8A5C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB01281110077AFD51CE18F352FCCDC9 /* EPShapes */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C21242972273478E5900720BF5924786 /* Pods-EPShapes_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B132A0C9807E21A5D35A3526B514A2F6 /* Info.plist */,
+				2C39DCECD08FE2089242648305F2D7D5 /* Pods-EPShapes_Tests.modulemap */,
+				B81B9797726A2295273DA03A7E38531A /* Pods-EPShapes_Tests-acknowledgements.markdown */,
+				73BF580CEE689DB0475141FF611DF819 /* Pods-EPShapes_Tests-acknowledgements.plist */,
+				382300DE85AC4FBDB788CCB4AF45466F /* Pods-EPShapes_Tests-dummy.m */,
+				9B37230A3D17EB8655B3C18DE6C2DC8B /* Pods-EPShapes_Tests-frameworks.sh */,
+				51A6076FCCBE3CD1BF3DA9242FAC4558 /* Pods-EPShapes_Tests-resources.sh */,
+				73D27A4CAB8104ADF3E2A5D87E3EC3E9 /* Pods-EPShapes_Tests-umbrella.h */,
+				4721E18BC3503B32D4E28DF19A158B6F /* Pods-EPShapes_Tests.debug.xcconfig */,
+				2958C72E6FC3ABC9A143381D286C1BA2 /* Pods-EPShapes_Tests.release.xcconfig */,
+			);
+			name = "Pods-EPShapes_Tests";
+			path = "Target Support Files/Pods-EPShapes_Tests";
+			sourceTree = "<group>";
+		};
+		C39D691EC29BDEBADC7D413F5270385F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B0FA6E8DF1B43B367FE89E98C1D931C /* Pods-EPShapes_Example */,
+				C21242972273478E5900720BF5924786 /* Pods-EPShapes_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D88849CEE8912E356FBD56B27EC0B99A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83C493218F698AA22BCD27CC39609C65 /* EPShapes.bundle */,
+				4176A0E33EEFB2279A21F111B6FB40B2 /* EPShapes.framework */,
+				575929930E6E73B5587E067973BE8074 /* Pods_EPShapes_Example.framework */,
+				A7F9D768D591B549A841559F158D090B /* Pods_EPShapes_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4FE76811C6878D00056DCE1 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE76821C6878D00056DCE1 /* ArrowDesignable.swift */,
+				F4FE76831C6878D00056DCE1 /* HeartDesignable.swift */,
+				F4FE76841C6878D00056DCE1 /* PolygonDesignable.swift */,
+				F4FE76851C6878D00056DCE1 /* ShapeDesignable.swift */,
+				F4FE76861C6878D00056DCE1 /* StarDesignable.swift */,
+			);
+			name = Designables;
+			path = Designable;
+			sourceTree = "<group>";
+		};
+		F4FE76871C6878D00056DCE1 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE76881C6878D00056DCE1 /* Enums.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		F4FE76891C6878D00056DCE1 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE768A1C6878D00056DCE1 /* UIBezierPath+Arrows.swift */,
+				F4FE768B1C6878D00056DCE1 /* UIBezierPath+Hearts.swift */,
+				F4FE768C1C6878D00056DCE1 /* UIBezierPath+Polygons.swift */,
+				F4FE768D1C6878D00056DCE1 /* UIBezierPath+Stars.swift */,
+			);
+			path = Paths;
+			sourceTree = "<group>";
+		};
+		F4FE768E1C6878D00056DCE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE768F1C6878D00056DCE1 /* Arrow */,
+				F4FE76931C6878D00056DCE1 /* Heart */,
+				F4FE76971C6878D00056DCE1 /* Polygon */,
+				F4FE769B1C6878D00056DCE1 /* Shape */,
+				F4FE769F1C6878D00056DCE1 /* Star */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4FE768F1C6878D00056DCE1 /* Arrow */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE76901C6878D00056DCE1 /* ArrowButton.swift */,
+				F4FE76911C6878D00056DCE1 /* ArrowImageView.swift */,
+				F4FE76921C6878D00056DCE1 /* ArrowView.swift */,
+			);
+			path = Arrow;
+			sourceTree = "<group>";
+		};
+		F4FE76931C6878D00056DCE1 /* Heart */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE76941C6878D00056DCE1 /* HeartButton.swift */,
+				F4FE76951C6878D00056DCE1 /* HeartImageView.swift */,
+				F4FE76961C6878D00056DCE1 /* HeartView.swift */,
+			);
+			path = Heart;
+			sourceTree = "<group>";
+		};
+		F4FE76971C6878D00056DCE1 /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE76981C6878D00056DCE1 /* PolygonButton.swift */,
+				F4FE76991C6878D00056DCE1 /* PolygonImageView.swift */,
+				F4FE769A1C6878D00056DCE1 /* PolygonView.swift */,
+			);
+			path = Polygon;
+			sourceTree = "<group>";
+		};
+		F4FE769B1C6878D00056DCE1 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE769C1C6878D00056DCE1 /* ShapeButton.swift */,
+				F4FE769D1C6878D00056DCE1 /* ShapeImageView.swift */,
+				F4FE769E1C6878D00056DCE1 /* ShapeView.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		F4FE769F1C6878D00056DCE1 /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE76A01C6878D00056DCE1 /* StarButton.swift */,
+				F4FE76A11C6878D00056DCE1 /* StarImageView.swift */,
+				F4FE76A21C6878D00056DCE1 /* StarView.swift */,
+			);
+			path = Star;
+			sourceTree = "<group>";
+		};
+		FB01281110077AFD51CE18F352FCCDC9 /* EPShapes */ = {
+			isa = PBXGroup;
+			children = (
+				1B7996A6E472B28856E1717A89D43BFB /* Pod */,
+				39FFBB707AEC8955508AAA610E07FEB2 /* Support Files */,
+			);
+			name = EPShapes;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FE2CDCC1C961BC8E511F2B6A34B487FD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE768E1C6878D00056DCE1 /* Views */,
+				F4FE76811C6878D00056DCE1 /* Designables */,
+				F4FE76891C6878D00056DCE1 /* Paths */,
+				F4FE76871C6878D00056DCE1 /* Enum */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E9A314E4CD5172E00387BF91F451728 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F306A86CD3BE588C557C2FD49C212644 /* Pods-EPShapes_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66B45AE3E9EB99206DC5796B647954AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B5FFD5E4C05EDAB89D79A73D9DD3E8 /* EPShapes-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B66FE75910A743E4F94BCE3D0FF9A9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54285528287B9B8462A154E00F81F73 /* Pods-EPShapes_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		71494FB52027CA0585841A8EE15890ED /* EPShapes-EPShapes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DC299AA5F7ECA99DB52DB400E375F3F /* Build configuration list for PBXNativeTarget "EPShapes-EPShapes" */;
+			buildPhases = (
+				C7398CA4E49B706BCFCCAE17277034D9 /* Sources */,
+				A59608AC99B5E32C8C9B9C210BFCA163 /* Frameworks */,
+				3048E5F6E544325C4D3E90CE10BDD856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EPShapes-EPShapes";
+			productName = "EPShapes-EPShapes";
+			productReference = 83C493218F698AA22BCD27CC39609C65 /* EPShapes.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		804683F8FB0E3B2635B60FE618BADC61 /* Pods-EPShapes_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F24D5C20BF580EDBEBC0ABD6473F2CA /* Build configuration list for PBXNativeTarget "Pods-EPShapes_Example" */;
+			buildPhases = (
+				C8548A5192312A5509F806F892ED418C /* Sources */,
+				C92C341F325394B3C2525FBACE391A87 /* Frameworks */,
+				7B66FE75910A743E4F94BCE3D0FF9A9D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4FFAD9266DF69710E541403F9366963 /* PBXTargetDependency */,
+			);
+			name = "Pods-EPShapes_Example";
+			productName = "Pods-EPShapes_Example";
+			productReference = 575929930E6E73B5587E067973BE8074 /* Pods_EPShapes_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D8BDFE238F13A83773AACC24DE9CADB /* EPShapes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7297A3038AA686C5BD6E02FF83AAFB /* Build configuration list for PBXNativeTarget "EPShapes" */;
+			buildPhases = (
+				0C89B9F0C702A355480CB8E2A7F28F86 /* Sources */,
+				DA3ACDB9DAB773AB309583340325C479 /* Frameworks */,
+				03502840250CA045F9F6FCA0A5F5B259 /* Resources */,
+				66B45AE3E9EB99206DC5796B647954AF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9847E4BD8576F13CC58E42916C3E1DE5 /* PBXTargetDependency */,
+			);
+			name = EPShapes;
+			productName = EPShapes;
+			productReference = 4176A0E33EEFB2279A21F111B6FB40B2 /* EPShapes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D491E8338E227BD80B87B16D165CC617 /* Pods-EPShapes_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26BA2EB6138A766B13B5248C732F4D97 /* Build configuration list for PBXNativeTarget "Pods-EPShapes_Tests" */;
+			buildPhases = (
+				A1A4D6CCC5D3F17AEAD68A29F53F1473 /* Sources */,
+				136E1A5B7EC092F3E39BB15A340F5D51 /* Frameworks */,
+				3E9A314E4CD5172E00387BF91F451728 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C43631FE263AEE365EF9DB8AB7098A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-EPShapes_Tests";
+			productName = "Pods-EPShapes_Tests";
+			productReference = A7F9D768D591B549A841559F158D090B /* Pods_EPShapes_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D88849CEE8912E356FBD56B27EC0B99A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D8BDFE238F13A83773AACC24DE9CADB /* EPShapes */,
+				71494FB52027CA0585841A8EE15890ED /* EPShapes-EPShapes */,
+				804683F8FB0E3B2635B60FE618BADC61 /* Pods-EPShapes_Example */,
+				D491E8338E227BD80B87B16D165CC617 /* Pods-EPShapes_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03502840250CA045F9F6FCA0A5F5B259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0731167DF7AA53A488AFC1285C65B180 /* EPShapes.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3048E5F6E544325C4D3E90CE10BDD856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C89B9F0C702A355480CB8E2A7F28F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FE76B31C6878D00056DCE1 /* PolygonButton.swift in Sources */,
+				F4FE76AA1C6878D00056DCE1 /* UIBezierPath+Hearts.swift in Sources */,
+				F4FE76BB1C6878D00056DCE1 /* StarView.swift in Sources */,
+				F4FE76B81C6878D00056DCE1 /* ShapeView.swift in Sources */,
+				F4FE76B11C6878D00056DCE1 /* HeartImageView.swift in Sources */,
+				F4FE76A51C6878D00056DCE1 /* PolygonDesignable.swift in Sources */,
+				F4FE76B61C6878D00056DCE1 /* ShapeButton.swift in Sources */,
+				F4FE76BA1C6878D00056DCE1 /* StarImageView.swift in Sources */,
+				F4FE76B41C6878D00056DCE1 /* PolygonImageView.swift in Sources */,
+				F4FE76AE1C6878D00056DCE1 /* ArrowImageView.swift in Sources */,
+				F4FE76A91C6878D00056DCE1 /* UIBezierPath+Arrows.swift in Sources */,
+				F4FE76B91C6878D00056DCE1 /* StarButton.swift in Sources */,
+				2DCD1854FD18FEE7BAD35CA87334E86B /* EPShapes-dummy.m in Sources */,
+				F4FE76B21C6878D00056DCE1 /* HeartView.swift in Sources */,
+				F4FE76B01C6878D00056DCE1 /* HeartButton.swift in Sources */,
+				F4FE76A41C6878D00056DCE1 /* HeartDesignable.swift in Sources */,
+				F4FE76A71C6878D00056DCE1 /* StarDesignable.swift in Sources */,
+				F4FE76A81C6878D00056DCE1 /* Enums.swift in Sources */,
+				F4FE76AD1C6878D00056DCE1 /* ArrowButton.swift in Sources */,
+				F4FE76AC1C6878D00056DCE1 /* UIBezierPath+Stars.swift in Sources */,
+				F4FE76A61C6878D00056DCE1 /* ShapeDesignable.swift in Sources */,
+				F4FE76AB1C6878D00056DCE1 /* UIBezierPath+Polygons.swift in Sources */,
+				F4FE76B71C6878D00056DCE1 /* ShapeImageView.swift in Sources */,
+				F4FE76AF1C6878D00056DCE1 /* ArrowView.swift in Sources */,
+				F4FE76A31C6878D00056DCE1 /* ArrowDesignable.swift in Sources */,
+				F4FE76B51C6878D00056DCE1 /* PolygonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A4D6CCC5D3F17AEAD68A29F53F1473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14C764F41851A735C6D957C00A416B2 /* Pods-EPShapes_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7398CA4E49B706BCFCCAE17277034D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8548A5192312A5509F806F892ED418C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24839EDD461DA29BD590016D927A9514 /* Pods-EPShapes_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C43631FE263AEE365EF9DB8AB7098A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EPShapes;
+			target = 8D8BDFE238F13A83773AACC24DE9CADB /* EPShapes */;
+			targetProxy = 1EC1A1420B6500BD380436D783B131E0 /* PBXContainerItemProxy */;
+		};
+		9847E4BD8576F13CC58E42916C3E1DE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "EPShapes-EPShapes";
+			target = 71494FB52027CA0585841A8EE15890ED /* EPShapes-EPShapes */;
+			targetProxy = 79BDCFE2AF01031824BAC46B204BDD76 /* PBXContainerItemProxy */;
+		};
+		B4FFAD9266DF69710E541403F9366963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EPShapes;
+			target = 8D8BDFE238F13A83773AACC24DE9CADB /* EPShapes */;
+			targetProxy = D6BFDC224E441ECC42169D72BB3BA67A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C09B22114F544EDB645302307B26AA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B0EF945BC5D2D5B1F5C32F8B9DE560 /* Pods-EPShapes_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EPShapes_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EPShapes_Example/Pods-EPShapes_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EPShapes_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		57D4610555C4FACAB531DA760F2B2669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4721E18BC3503B32D4E28DF19A158B6F /* Pods-EPShapes_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EPShapes_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EPShapes_Tests/Pods-EPShapes_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EPShapes_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CB8F2CDBD6EDCAAAE54AF58163BCBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887B1DF181D956BBA4CC3D5A61133806 /* EPShapes.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = EPShapes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		89AE8ACE591C5C3558EF052473190F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2958C72E6FC3ABC9A143381D286C1BA2 /* Pods-EPShapes_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EPShapes_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EPShapes_Tests/Pods-EPShapes_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EPShapes_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0C166B2970F98A355D31E2266C4386A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887B1DF181D956BBA4CC3D5A61133806 /* EPShapes.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EPShapes/EPShapes-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EPShapes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EPShapes/EPShapes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = EPShapes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9794B9F6142F5FEC776B5744A61BBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03A03DF85BE434A4D093027E0E70DC3 /* Pods-EPShapes_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EPShapes_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EPShapes_Example/Pods-EPShapes_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EPShapes_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B546F49F2771AA08D86908EC977FBB53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887B1DF181D956BBA4CC3D5A61133806 /* EPShapes.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = EPShapes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D23F7925AE1A824FDC9382B2972BCB31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887B1DF181D956BBA4CC3D5A61133806 /* EPShapes.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EPShapes/EPShapes-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EPShapes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EPShapes/EPShapes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = EPShapes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26BA2EB6138A766B13B5248C732F4D97 /* Build configuration list for PBXNativeTarget "Pods-EPShapes_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D4610555C4FACAB531DA760F2B2669 /* Debug */,
+				89AE8ACE591C5C3558EF052473190F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F24D5C20BF580EDBEBC0ABD6473F2CA /* Build configuration list for PBXNativeTarget "Pods-EPShapes_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9794B9F6142F5FEC776B5744A61BBC8 /* Debug */,
+				4C09B22114F544EDB645302307B26AA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C7297A3038AA686C5BD6E02FF83AAFB /* Build configuration list for PBXNativeTarget "EPShapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C166B2970F98A355D31E2266C4386A /* Debug */,
+				D23F7925AE1A824FDC9382B2972BCB31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DC299AA5F7ECA99DB52DB400E375F3F /* Build configuration list for PBXNativeTarget "EPShapes-EPShapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B546F49F2771AA08D86908EC977FBB53 /* Debug */,
+				5CB8F2CDBD6EDCAAAE54AF58163BCBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

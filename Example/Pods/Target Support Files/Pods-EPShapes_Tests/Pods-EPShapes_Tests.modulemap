@@ -1,0 +1,6 @@
+framework module Pods_EPShapes_Tests {
+  umbrella header "Pods-EPShapes_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

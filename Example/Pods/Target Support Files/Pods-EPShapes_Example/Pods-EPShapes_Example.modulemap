@@ -1,0 +1,6 @@
+framework module Pods_EPShapes_Example {
+  umbrella header "Pods-EPShapes_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

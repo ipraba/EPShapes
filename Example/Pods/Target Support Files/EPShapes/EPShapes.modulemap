@@ -1,0 +1,6 @@
+framework module EPShapes {
+  umbrella header "EPShapes-umbrella.h"
+
+  export *
+  module * { export * }
+}
