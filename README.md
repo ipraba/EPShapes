@@ -18,7 +18,7 @@ Create shapes(Polygons, Stars, Hearts, Arrows) in Interface builder using IBInsp
 3. Designable classes that can be used with custom views
 4. Support for creating programmatically
 5. Scale shapes
-6. Apply extursions for stars to generate different star shapes
+6. Apply extrusions for stars to generate different star shapes
 7. Equilateral Polygon UIviews/UIImageViews/UIButtons with 'n' number of sides can be designed directly from IB/ Storyboards
 
 
