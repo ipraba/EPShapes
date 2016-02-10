@@ -30,7 +30,7 @@ Create shapes(Polygons, Stars, Hearts, Arrows) in Interface builder using IBInsp
 
 ### Installation
 
-##### [Cocoapods](http://cocoapods.org)
+##### [CocoaPods](http://cocoapods.org)
 
 EPShapes is available through CocoaPods. To install it, simply add the following line to your Podfile:
 ```ruby
