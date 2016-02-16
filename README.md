@@ -19,18 +19,21 @@ Create shapes(Polygons, Stars, Hearts, Arrows) in Interface builder using IBInsp
 4. Support for creating programmatically
 5. Scale shapes
 6. Apply extrusions for stars to generate different star shapes
-7. Equilateral Polygon UIviews/UIImageViews/UIButtons with 'n' number of sides can be designed directly from IB/ Storyboards
+7. Create stars with n number of corners
+8. Equilateral Polygon UIViews/UIImageViews/UIButtons with 'n' number of sides can be designed directly from IB/ Storyboards
 
 
 ### Screenshots
 
 ![Polygon](https://raw.githubusercontent.com/ipraba/EPShapes/master/Screenshots/Polygon.gif)
 ![Star](https://raw.githubusercontent.com/ipraba/EPShapes/master/Screenshots/Star.gif)
+![Heart](https://raw.githubusercontent.com/ipraba/EPShapes/master/Screenshots/Heart.gif)
+![Arrow](https://raw.githubusercontent.com/ipraba/EPShapes/master/Screenshots/Arrow.gif)
 
 
 ### Installation
 
-##### [Cocoapods](http://cocoapods.org)
+##### [CocoaPods](http://cocoapods.org)
 
 EPShapes is available through CocoaPods. To install it, simply add the following line to your Podfile:
 ```ruby
