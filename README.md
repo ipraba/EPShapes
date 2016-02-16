@@ -1,3 +1,7 @@
+<p align="center" >
+  <img src="Screenshots/Shapes_Logo.png" alt="EPShapes" title="EPShapes" width="196">
+</p>
+
 # EPShapes
 
 Create shapes(Polygons, Stars, Hearts, Arrows) in Interface builder using IBInspectable and IBDesignable 
