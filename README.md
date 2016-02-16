@@ -28,6 +28,7 @@ Create shapes(Polygons, Stars, Hearts, Arrows) in Interface builder using IBInsp
 ![Polygon](https://raw.githubusercontent.com/ipraba/EPShapes/master/Screenshots/Polygon.gif)
 ![Star](https://raw.githubusercontent.com/ipraba/EPShapes/master/Screenshots/Star.gif)
 ![Heart](https://raw.githubusercontent.com/ipraba/EPShapes/master/Screenshots/Heart.gif)
+![Arrow](https://raw.githubusercontent.com/ipraba/EPShapes/master/Screenshots/Arrow.gif)
 
 
 ### Installation
