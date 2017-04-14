@@ -7,7 +7,7 @@
 Create shapes(Polygons, Stars, Hearts, Arrows) in Interface builder using IBInspectable and IBDesignable 
 
 [![CI Status](http://img.shields.io/travis/ipraba/EPShapes.svg?style=flat)](https://travis-ci.org/ipraba/EPShapes)
-[![Swift 2.0](https://img.shields.io/badge/Swift-2.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![Version](https://img.shields.io/cocoapods/v/EPShapes.svg?style=flat)](http://cocoapods.org/pods/EPShapes)
 [![License](http://img.shields.io/badge/license-MIT-33e0ff.svg)](https://github.com/ipraba/EPShapes/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/EPShapes.svg?style=flat)](http://cocoapods.org/pods/EPShapes)
