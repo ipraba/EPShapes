@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "EPShapes"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Design shapes(polygons, hearts, arrows, stars) in Interface builder"
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ DESC
   s.author           = { "Prabaharan" => "mailprabaharan.e@gmail.com" }
   s.source           = { :git => "https://github.com/ipraba/EPShapes.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '10.3'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
