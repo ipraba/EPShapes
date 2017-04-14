@@ -29,17 +29,17 @@ public extension StarDesignable where Self: UIView {
             .forEach { $0.removeFromSuperlayer() }
         
         let shapeLayer = CAShapeLayer()
-        shapeLayer.backgroundColor = UIColor.clearColor().CGColor
+        shapeLayer.backgroundColor = UIColor.clear.cgColor
         shapeLayer.name = "Star"
-        shapeLayer.path = UIBezierPath().getStars(frame, scale: scaling, corners: corners, extrusion: extrusionPercent).CGPath
+        shapeLayer.path = UIBezierPath().getStars(frame, scale: scaling, corners: corners, extrusion: extrusionPercent).cgPath
         
         if shapeMask {
             shapeLayer.fillRule = kCAFillRuleNonZero
             self.layer.mask = shapeLayer
         } else  {
             shapeLayer.lineWidth = strokeWidth
-            shapeLayer.strokeColor = strokeColor.CGColor
-            shapeLayer.fillColor = fillColor.CGColor
+            shapeLayer.strokeColor = strokeColor.cgColor
+            shapeLayer.fillColor = fillColor.cgColor
             self.layer.addSublayer(shapeLayer)
         }
     }

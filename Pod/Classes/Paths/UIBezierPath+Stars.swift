@@ -10,7 +10,7 @@ import Foundation
 
 public extension UIBezierPath  {
     
-    func getStars(originalRect: CGRect, scale: Double, corners: Int, extrusion: Int) -> UIBezierPath {
+    func getStars(_ originalRect: CGRect, scale: Double, corners: Int, extrusion: Int) -> UIBezierPath {
         
         let scaledWidth = (originalRect.size.width * CGFloat(scale))
         let scaledXValue = ((originalRect.size.width) - scaledWidth) / 2
@@ -25,32 +25,32 @@ public extension UIBezierPath  {
     }
     
     
-    func drawStars(originalRect: CGRect, scaledRect: CGRect, corners: Int, extrusion: Int) {
+    func drawStars(_ originalRect: CGRect, scaledRect: CGRect, corners: Int, extrusion: Int) {
         
 //        if extrusion > 100 {
 //            extrusion = 100
 //        }
         
-        let center = CGPointMake(originalRect.width/2, originalRect.height/2)
+        let center = CGPoint(x: originalRect.width/2, y: originalRect.height/2)
         
-        var angle = -CGFloat( M_PI / 2.0 )
+        var angle = -CGFloat( Double.pi / 2.0 )
         
-        let angleCounter = CGFloat( M_PI * 2.0 / Double(corners * 2) )
+        let angleCounter = CGFloat( Double.pi * 2.0 / Double(corners * 2) )
         let radius = min(scaledRect.size.width/2, scaledRect.size.height/2)
         
         let extrusion = radius * CGFloat(extrusion) / 100
         
-        self.moveToPoint(CGPointMake(radius * cos(angle) + center.x, radius * sin(angle) + center.y))
+        self.move(to: CGPoint(x: radius * cos(angle) + center.x, y: radius * sin(angle) + center.y))
         for i in 1...(corners * 2)  {
             if i % 2 != 0 {
-                self.addLineToPoint(CGPointMake(radius * cos(angle) + center.x, radius * sin(angle) + center.y))
+                self.addLine(to: CGPoint(x: radius * cos(angle) + center.x, y: radius * sin(angle) + center.y))
             } else {
-                self.addLineToPoint(CGPointMake(extrusion * cos(angle) + center.x, extrusion * sin(angle) + center.y))
+                self.addLine(to: CGPoint(x: extrusion * cos(angle) + center.x, y: extrusion * sin(angle) + center.y))
             }
             
             angle += angleCounter
         }
-        self.closePath()
+        self.close()
         
     }
     

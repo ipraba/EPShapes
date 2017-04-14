@@ -8,42 +8,42 @@
 
 import Foundation
 
-@IBDesignable public class ShapeButton: UIButton , ShapeDesignable {
+@IBDesignable open class ShapeButton: UIButton , ShapeDesignable {
     
-    @IBInspectable public var cornerRadius: CGFloat = 0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
             layer.masksToBounds = cornerRadius > 0
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat = 0 {
+    @IBInspectable open var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
-    @IBInspectable public var borderColor: UIColor = UIColor.blackColor() {
+    @IBInspectable open var borderColor: UIColor = UIColor.black {
         didSet {
-            layer.borderColor = borderColor.CGColor
+            layer.borderColor = borderColor.cgColor
         }
     }
     
-    @IBInspectable public var strokeColor: UIColor = UIColor.blackColor()
-    @IBInspectable public var scaling: Double = 1.0
-    @IBInspectable public var strokeWidth: CGFloat = 1.0
+    @IBInspectable open var strokeColor: UIColor = UIColor.black
+    @IBInspectable open var scaling: Double = 1.0
+    @IBInspectable open var strokeWidth: CGFloat = 1.0
     
     
-    public override func prepareForInterfaceBuilder() {
+    open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         config()
     }
     
-    public override func awakeFromNib() {
+    open override func awakeFromNib() {
         super.awakeFromNib()
         config()
     }
     
-    public func config() {
+    open func config() {
         //To be subclassed
     }
     

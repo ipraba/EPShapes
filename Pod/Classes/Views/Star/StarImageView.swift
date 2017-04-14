@@ -8,15 +8,15 @@
 
 import Foundation
 
-@IBDesignable public class StarImageView: ShapeImageView, StarDesignable {
+@IBDesignable open class StarImageView: ShapeImageView, StarDesignable {
     
     
-    @IBInspectable public var fillColor: UIColor = UIColor.clearColor()
-    @IBInspectable public var corners: Int = 5
-    @IBInspectable public var extrusionPercent: Int = 33
-    @IBInspectable public var shapeMask: Bool = false
+    @IBInspectable open var fillColor: UIColor = UIColor.clear
+    @IBInspectable open var corners: Int = 5
+    @IBInspectable open var extrusionPercent: Int = 33
+    @IBInspectable open var shapeMask: Bool = false
     
-    override public func config() {
+    override open func config() {
         if corners > 0 {
             drawStar()
         }

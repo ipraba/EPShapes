@@ -22,14 +22,14 @@ public extension ArrowDesignable where Self: UIView {
             .forEach { $0.removeFromSuperlayer() }
         
         let shapeLayer = CAShapeLayer()
-        shapeLayer.backgroundColor = UIColor.clearColor().CGColor
+        shapeLayer.backgroundColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = strokeWidth
         shapeLayer.name = "Arrow"
-        shapeLayer.strokeColor = strokeColor.CGColor
-        shapeLayer.fillColor = UIColor.clearColor().CGColor
+        shapeLayer.strokeColor = strokeColor.cgColor
+        shapeLayer.fillColor = UIColor.clear.cgColor
         
         if let arrowDir = ArrowDirection(rawValue:arrowDirection) {
-            shapeLayer.path = UIBezierPath().getArrow(frame , scale: scaling, arrowDirection: arrowDir).CGPath
+            shapeLayer.path = UIBezierPath().getArrow(frame , scale: scaling, arrowDirection: arrowDir).cgPath
         }
         self.layer.addSublayer(shapeLayer)
     }

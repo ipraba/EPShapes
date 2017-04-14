@@ -8,11 +8,11 @@
 
 import UIKit
 
-@IBDesignable public class ArrowView: ShapeView, ArrowDesignable {
+@IBDesignable open class ArrowView: ShapeView, ArrowDesignable {
 
-    @IBInspectable public var arrowDirection: String = ArrowDirection.Default.rawValue
+    @IBInspectable open var arrowDirection: String = ArrowDirection.Default.rawValue
     
-    override public func config() {
+    override open func config() {
         drawArrow()
     }
 }

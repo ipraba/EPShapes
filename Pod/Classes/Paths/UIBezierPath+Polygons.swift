@@ -10,7 +10,7 @@ import Foundation
 
 public extension UIBezierPath  {
     
-    func getPolygon(originalRect: CGRect, scale: Double, sides: Int) -> UIBezierPath {
+    func getPolygon(_ originalRect: CGRect, scale: Double, sides: Int) -> UIBezierPath {
         
         let scaledWidth = (originalRect.size.width * CGFloat(scale))
         let scaledXValue = ((originalRect.size.width) - scaledWidth) / 2
@@ -25,21 +25,21 @@ public extension UIBezierPath  {
     }
     
     
-    func drawPolygon(originalRect: CGRect, scaledRect: CGRect, sides: Int) {
+    func drawPolygon(_ originalRect: CGRect, scaledRect: CGRect, sides: Int) {
         
-        let center = CGPointMake(originalRect.width/2, originalRect.height/2)
+        let center = CGPoint(x: originalRect.width/2, y: originalRect.height/2)
         
-        var angle = CGFloat( M_PI / 2.0 )
+        var angle = CGFloat( Double.pi / 2.0 )
         
-        let angleCounter = CGFloat( M_PI * 2.0 / Double(sides) )
+        let angleCounter = CGFloat( Double.pi * 2.0 / Double(sides) )
         let radius = min(scaledRect.size.width/2, scaledRect.size.height/2)
         
-        self.moveToPoint(CGPointMake(radius * cos(angle) + center.x, radius * sin(angle) + center.y))
+        self.move(to: CGPoint(x: radius * cos(angle) + center.x, y: radius * sin(angle) + center.y))
         for _ in 1...sides  {
             angle += angleCounter
-            self.addLineToPoint(CGPointMake(radius * cos(angle) + center.x, radius * sin(angle) + center.y))
+            self.addLine(to: CGPoint(x: radius * cos(angle) + center.x, y: radius * sin(angle) + center.y))
         }
-        self.closePath()
+        self.close()
         
     }
     

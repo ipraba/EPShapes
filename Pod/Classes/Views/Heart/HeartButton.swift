@@ -8,12 +8,12 @@
 
 import Foundation
 
-@IBDesignable public class HeartButton: ShapeButton, HeartDesignable {
+@IBDesignable open class HeartButton: ShapeButton, HeartDesignable {
     
-    @IBInspectable public var fillColor: UIColor = UIColor.clearColor()
-    @IBInspectable public var shapeMask: Bool = false
+    @IBInspectable open var fillColor: UIColor = UIColor.clear
+    @IBInspectable open var shapeMask: Bool = false
     
-    override public func config() {
+    override open func config() {
         drawHeart()
     }
     

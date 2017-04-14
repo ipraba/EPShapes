@@ -8,11 +8,11 @@
 
 import Foundation
 
-@IBDesignable public class ArrowButton: ShapeButton, ArrowDesignable {
+@IBDesignable open class ArrowButton: ShapeButton, ArrowDesignable {
     
-    @IBInspectable public var arrowDirection: String = ArrowDirection.Default.rawValue
+    @IBInspectable open var arrowDirection: String = ArrowDirection.Default.rawValue
     
-    override public func config() {
+    override open func config() {
         drawArrow()
     }
 }

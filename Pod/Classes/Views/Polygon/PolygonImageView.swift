@@ -8,13 +8,13 @@
 
 import Foundation
 
-@IBDesignable public class PolygonImageView: ShapeImageView, PolygonDesignable {
+@IBDesignable open class PolygonImageView: ShapeImageView, PolygonDesignable {
     
-    @IBInspectable public var sides = 4
-    @IBInspectable public var shapeMask = false
-    @IBInspectable public var fillColor = UIColor.clearColor()
+    @IBInspectable open var sides = 4
+    @IBInspectable open var shapeMask = false
+    @IBInspectable open var fillColor = UIColor.clear
     
-    override public func config() {
+    override open func config() {
         if sides > 0 {
             drawPolygon()
         }

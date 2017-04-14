@@ -9,11 +9,11 @@
 import Foundation
 
 
-@IBDesignable public class ArrowImageView: ShapeImageView, ArrowDesignable {
+@IBDesignable open class ArrowImageView: ShapeImageView, ArrowDesignable {
     
-    @IBInspectable public var arrowDirection: String = ArrowDirection.Default.rawValue
+    @IBInspectable open var arrowDirection: String = ArrowDirection.Default.rawValue
     
-    override public func config() {
+    override open func config() {
         drawArrow()
     }
 }

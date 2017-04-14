@@ -10,7 +10,7 @@ import Foundation
 
 public extension UIBezierPath  {
     
-    func getHearts(originalRect: CGRect, scale: Double) -> UIBezierPath {
+    func getHearts(_ originalRect: CGRect, scale: Double) -> UIBezierPath {
         
         
         let scaledWidth = (originalRect.size.width * CGFloat(scale))
@@ -20,37 +20,37 @@ public extension UIBezierPath  {
         
         let scaledRect = CGRect(x: scaledXValue, y: scaledYValue, width: scaledWidth, height: scaledHeight)
         
-        self.moveToPoint(CGPointMake(originalRect.size.width/2, scaledRect.origin.y + scaledRect.size.height))
+        self.move(to: CGPoint(x: originalRect.size.width/2, y: scaledRect.origin.y + scaledRect.size.height))
         
         
-        self.addCurveToPoint(CGPointMake(scaledRect.origin.x, scaledRect.origin.y + (scaledRect.size.height/4)),
-            controlPoint1:CGPointMake(scaledRect.origin.x + (scaledRect.size.width/2), scaledRect.origin.y + (scaledRect.size.height*3/4)) ,
-            controlPoint2: CGPointMake(scaledRect.origin.x, scaledRect.origin.y + (scaledRect.size.height/2)) )
+        self.addCurve(to: CGPoint(x: scaledRect.origin.x, y: scaledRect.origin.y + (scaledRect.size.height/4)),
+            controlPoint1:CGPoint(x: scaledRect.origin.x + (scaledRect.size.width/2), y: scaledRect.origin.y + (scaledRect.size.height*3/4)) ,
+            controlPoint2: CGPoint(x: scaledRect.origin.x, y: scaledRect.origin.y + (scaledRect.size.height/2)) )
         
-        self.addArcWithCenter(CGPointMake( scaledRect.origin.x + (scaledRect.size.width/4),scaledRect.origin.y + (scaledRect.size.height/4)),
+        self.addArc(withCenter: CGPoint( x: scaledRect.origin.x + (scaledRect.size.width/4),y: scaledRect.origin.y + (scaledRect.size.height/4)),
             radius: (scaledRect.size.width/4),
-            startAngle: CGFloat(M_PI),
+            startAngle: CGFloat(Double.pi),
             endAngle: 0,
             clockwise: true)
         
-        self.addArcWithCenter(CGPointMake( scaledRect.origin.x + (scaledRect.size.width * 3/4),scaledRect.origin.y + (scaledRect.size.height/4)),
+        self.addArc(withCenter: CGPoint( x: scaledRect.origin.x + (scaledRect.size.width * 3/4),y: scaledRect.origin.y + (scaledRect.size.height/4)),
             radius: (scaledRect.size.width/4),
-            startAngle: CGFloat(M_PI),
+            startAngle: CGFloat(Double.pi),
             endAngle: 0,
             clockwise: true)
         
-        self.addCurveToPoint(CGPointMake(originalRect.size.width/2, scaledRect.origin.y + scaledRect.size.height),
-            controlPoint1: CGPointMake(scaledRect.origin.x + scaledRect.size.width, scaledRect.origin.y + (scaledRect.size.height/2)),
-            controlPoint2: CGPointMake(scaledRect.origin.x + (scaledRect.size.width/2), scaledRect.origin.y + (scaledRect.size.height*3/4)) )
+        self.addCurve(to: CGPoint(x: originalRect.size.width/2, y: scaledRect.origin.y + scaledRect.size.height),
+            controlPoint1: CGPoint(x: scaledRect.origin.x + scaledRect.size.width, y: scaledRect.origin.y + (scaledRect.size.height/2)),
+            controlPoint2: CGPoint(x: scaledRect.origin.x + (scaledRect.size.width/2), y: scaledRect.origin.y + (scaledRect.size.height*3/4)) )
 
-        self.closePath()
+        self.close()
         
         return self
     }
     
     
-    func maximumSquareRect(rect: CGRect) -> CGRect {
+    func maximumSquareRect(_ rect: CGRect) -> CGRect {
         let side = min(rect.size.width, rect.size.height)
-        return CGRectMake(rect.size.width/2 - side/2, rect.size.height/2 - side/2, side, side)
+        return CGRect(x: rect.size.width/2 - side/2, y: rect.size.height/2 - side/2, width: side, height: side)
     }
 }
